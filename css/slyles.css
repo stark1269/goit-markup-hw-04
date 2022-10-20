@@ -160,6 +160,11 @@ address {
   fill: currentColor;
 }
 
+.tel {
+  width: 10px;
+  height: 16px;
+}
+
 .icon-mail:hover,
 .icon-mail:focus {
   fill: var(--accent-color);
