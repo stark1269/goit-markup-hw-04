@@ -179,9 +179,12 @@ address {
 /* Герой */
 
 .hero {
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
 
   background: var(--footer-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -189,9 +192,6 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .hero-title {
@@ -352,6 +352,15 @@ address {
   color: var(--main-color);
 }
 
+.footer-section {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contact {
+  margin-right: 70px;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -394,6 +403,41 @@ address {
   color: var(--accent-color);
 }
 
+.footer-soc-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.twitter {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-logo {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
+}
+
 /* Портфолио */
 
 .margin-container {
@@ -429,6 +473,8 @@ address {
 .project-btn:focus {
   background-color: var(--accent-color);
   color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .current-btn {
@@ -444,6 +490,12 @@ address {
 
 .project-item-img {
   width: calc((100% - 60px) / 3);
+  cursor: pointer;
+}
+
+.project-item-img:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-img-desc {
