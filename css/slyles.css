@@ -165,11 +165,6 @@ address {
   height: 16px;
 }
 
-.icon-mail:hover,
-.icon-mail:focus {
-  fill: var(--accent-color);
-}
-
 .header-item-contact:not(:last-child) {
   margin-right: 50px;
 }
