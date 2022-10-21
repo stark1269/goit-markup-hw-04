@@ -5,6 +5,7 @@
   --text-color: #757575;
   --title-color: #212121;
   --accent-color: #2196f3;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -72,6 +73,15 @@ address {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
 }
 
 /* Хедер */
@@ -242,6 +252,24 @@ address {
   width: calc((100% - 90px) / 4);
 }
 
+.icons-benefits {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--section-color);
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .benefits-title {
   margin-bottom: 10px;
 
@@ -271,13 +299,6 @@ address {
 
 .about-title {
   margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-color);
 }
 
 .about-item {
@@ -297,13 +318,6 @@ address {
 
 .team-title {
   margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-color);
 }
 
 .team-item {
@@ -333,10 +347,86 @@ address {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--icons-color);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  color: var(--main-color);
+}
+
+.icon-team {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Постійні клієнти */
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.icon-clients {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* Футер */
@@ -418,12 +508,17 @@ address {
   gap: 10px;
 }
 
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -490,10 +585,14 @@ address {
 
 .project-item-img {
   width: calc((100% - 60px) / 3);
-  cursor: pointer;
 }
 
-.project-item-img:hover {
+.project-link-img {
+  display: block;
+}
+
+.project-link-img:hover,
+.project-link-img:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -518,4 +617,5 @@ address {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--text-color);
 }
